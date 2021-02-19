@@ -134,6 +134,14 @@ body{
     z-index: 99;
     cursor: pointer;
   }
+  .add-block:hover{
+    box-shadow:
+        2px 2px rgba(0, 0, 0, 0.1),
+        3px 3px rgba(0, 0, 0, 0.1),
+        4px 4px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
   @media(max-width:1200px){
       .main{
         margin: 5vh 10vw;

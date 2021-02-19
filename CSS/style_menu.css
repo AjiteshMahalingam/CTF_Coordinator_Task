@@ -101,6 +101,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border:none;
+    padding-bottom: 1em;
     border-bottom: 2px solid #e2a241;
 }
 .menu-grid p{
@@ -132,7 +133,7 @@ body{
     width: 100%;
 }
 .menu-dish button{
-    background-color: #e2a241;
+    background-color: rgba(226, 162, 65, 0.9);
     color: white;
     border-radius: 5px;
     border:none;
@@ -141,6 +142,12 @@ body{
     font-size: large;
     cursor: pointer;
     width: auto;
+    transition: all 0.2s ease-in-out;
+
+}
+.menu-dish button:hover{
+    background-color: #e2a241;
+    box-shadow: 0px 5px 15px rgba(226, 162, 65, 0.7);
 }
 .menu-dish{
     margin: 0% 10%;
@@ -191,6 +198,18 @@ body{
     z-index: 99;
     cursor: pointer;
   }
+  #spl_last{
+      grid-column: 2/3;
+  }
+  .grow div{
+      transition: 1s ease;
+  }
+  .grow div:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+  }
 @media(max-width:1140px){
     .menu-grid{
         grid-template-columns: 1fr 1fr;
@@ -200,6 +219,9 @@ body{
     }
     .menu-dish{
         margin:0% 19%;
+    }
+    #spl_last{
+        grid-column: 1/2;
     }
 }
 @media(max-width:890px){
