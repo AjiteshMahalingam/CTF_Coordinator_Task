@@ -76,9 +76,9 @@ body{
 }
 .login-nav ul{
   list-style: none;
-  display: inline-flex;
+  display: inline;
   text-align: center;
-  width: 100%;
+  width: auto;
 
 }
 .login-nav ul li{
@@ -116,7 +116,13 @@ body{
 .details label, input{
   margin: 1em 0.25em;
   color: white;
-  border-radius: 3px;
+  border-radius: 4px;
+}
+#title{
+  font-size: x-large;
+  font-weight: bold;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
 }
 .footer{
   width: 100%;
@@ -159,4 +165,9 @@ body{
   .nav-bar ul li{
     margin: 0em 0.5em;
   }
+}
+.ham{
+    display: none;
+    float: right;
+    margin: 20px 30px;
 }
