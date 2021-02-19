@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Menu</title>
+        <link rel="stylesheet" href="CSS/style_menu.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div id="logo">
+                <img src="images/name_white.png">
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="menu.html" style="border-bottom: 2px solid white; font-weight: bolder;">Menu</a></li>
+                    <li><a href="branches.html">Our Branches</a></li>
+                    <li><a href="#" class="fa fa-shopping-cart" style="padding-top: 1.3em;"><span></span></a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu">
+            <button onclick="topFunction()" id="topbtn">Top</button>
+
+            <div class="menu-nav">
+                <ul>
+                    <li id="menu1"><a href="#spl">Our Specials</a></li>
+                    <li id='menu2'><a href="#starters">Starters</a></li>
+                    <li id="menu3"><a href="#maincourse">Main Course</a></li>
+                    <li id='menu4'><a href="#other"> Chinese and North Indian</a></li>
+                </ul>
+            </div>
+            
+            <div id="spl" class="menu-dish">
+                <h2>Our Specials</h2>
+                <div class="menu-grid">
+                    <div>
+                        <img src="Images/starters/pallipalayam.jpg">
+                        <p>Chicken Pallipalayam</p>
+                        <p>Rs 150</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/prawn.jpg">
+                        <p>Golden Honey Prawns</p>
+                        <p>Rs 130</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/kola.jpg">
+                        <p>Mutton Kola Urundai</p>
+                        <p>Rs 100</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/main/mbiryani.jpg">
+                        <p>Mutton Biryani</p>
+                        <p>Rs 180</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/main/cbiryani.jpg">
+                        <p>Chicken Biryani</p>
+                        <p>Rs 160</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/gravy/mutton.jpg">
+                        <p>Mutton Chukka</p>
+                        <p>Rs 150</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div style="grid-column: 2/3;" >
+                        <img src="Images/bread/cfr.jpg">
+                        <p>Chicken Fried Rice</p>
+                        <p>Rs 140</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="starters" class="menu-dish">
+                <h2>Starters</h2>
+                <div class="menu-grid">
+                    <div>
+                        <img src="Images/starters/gobi.jpg">
+                        <p>Gobi 65</p>
+                        <p>Rs 70</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/mushpep.jpg">
+                        <p>Mushroom Pepper Fry</p>
+                        <p>Rs 75</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/mushtand.jpg">
+                        <p>Mushroom Tandoori</p>
+                        <p>Rs 90</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/ptikka.jpg">
+                        <p>Paneer Tikka</p>
+                        <p>Rs 100</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/bcmanch.jpg">
+                        <p>Baby Corn Manchurian</p>
+                        <p>Rs 80</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/chick65.jpg">
+                        <p>Chicken 65</p>
+                        <p>Rs 100</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/cbbq.jpg">
+                        <p>Chicken BBQ</p>
+                        <p>Rs 125</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/lollipop.jpg">
+                        <p>Chicken Lollipop</p>
+                        <p>Rs 120</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/pallipalayam.jpg">
+                        <p>Chicken Pallipalayam</p>
+                        <p>Rs 150</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/kola.jpg">
+                        <p>Mutton Kola Urundai</p>
+                        <p>Rs 100</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/fish.jpg">
+                        <p>Vanjaram Fish Fry</p>
+                        <p>Rs 140</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/starters/prawn.jpg">
+                        <p>Golden Honey Prawns</p>
+                        <p>Rs 130</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="maincourse" class="menu-dish">
+                <h2>Main Course</h2>
+                <div class="menu-grid">
+                    <div>
+                        <img src="Images/main/vbiryani'.jpg">
+                        <p>Veg Biryani</p>
+                        <p>Rs 110</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/main/mushbiryani.jpg">
+                        <p>Mushroom Biryani</p>
+                        <p>Rs 130</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/main/panbiryani.jpg">
+                        <p>Paneer Biryani</p>
+                        <p>Rs 130</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/main/mbiryani.jpg">
+                        <p>Mutton Biryani</p>
+                        <p>Rs 180</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/main/cbiryani.jpg">
+                        <p>Chicken Biryani</p>
+                        <p>Rs 160</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/main/kuska.jpg">
+                        <p>Plain Biryani</p>
+                        <p>Rs 150</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/gravy/mush.jpg">
+                        <p>Mushroom Gravy</p>
+                        <p>Rs 100</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/gravy/paneer.jpg">
+                        <p>Kadai Paneer</p>
+                        <p>Rs 120</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/gravy/chic.jpg">
+                        <p>Butter Chicken</p>
+                        <p>Rs 135</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div style="grid-column: 2/3;" >
+                        <img src="Images/gravy/mutton.jpg">
+                        <p>Mutton Chukka</p>
+                        <p>Rs 150</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="other" class="menu-dish">
+                <h2>Chinese and North Indian</h2>
+                <div class="menu-grid">
+                    <div>
+                        <img src="Images/bread/vfc.jpg">
+                        <p>Veg Fried Rice</p>
+                        <p>Rs 120</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/bread/cfr.jpg">
+                        <p>Chicken Fried Rice</p>
+                        <p>Rs 140</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/bread/vn.jpg">
+                        <p>Veg Noodles</p>
+                        <p>Rs 120</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/bread/cn.jpg">
+                        <p>Chicken Noodles</p>
+                        <p>Rs 140</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/bread/parotta.jpg">
+                        <p>Parotta</p>
+                        <p>Rs 30</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                    <div>
+                        <img src="Images/bread/chap.jpg">
+                        <p>Chapati</p>
+                        <p>Rs 25</p>
+                        <button type="button" onclick="addCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="i-bar">
+                <a class="fa fa-facebook" href="#"></a>
+                <a class="fa fa-instagram" href="#"></a>
+                <a class="fa fa-envelope" href="#"></a>
+            </div>
+            <p class="credit">© MURUGA BHAVAN</p>
+        </div>
+        <script>
+            function addCart(){
+                swal({
+                    title:'Added to Cart',
+                    icon:'success'
+                });
+            }
+            
+            function topFunction(){
+                document.documentElement.scrollTop = 0;
+            }
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,240 @@
+html, body{
+    height: 100%;
+    font-family: 'Roboto';
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.header{
+
+    background-color: #e2a241;
+    margin: none;
+    overflow: hidden;
+    height: 100px;
+    position: relative;
+}
+.nav-bar{
+    float: right;
+  
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+#logo{
+    float: left;
+    height: 100px;
+    width: 20%;
+    padding-left: 2em;
+}
+#logo img{
+    height: 90px;
+	width: auto;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    margin: 0em 2em;
+}
+.nav-bar ul li a{
+    padding: 2em 0em 1em 0em;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    height:1.2em;
+}
+.nav-bar ul li a:hover{
+    border-bottom: 2px solid white;
+}
+.menu h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto';
+    color: white;
+}
+.menu-nav{
+    border-bottom: 3px solid gray;
+    margin:0vh 10vw;
+}
+.menu-nav ul{
+    list-style: none;
+    display: flex; 
+    justify-content: center;   
+}
+.menu-nav ul li{
+    display: inline;
+    margin-bottom: none;
+}
+.menu-nav ul li a{
+    display: block;
+    padding: 0em 1em;
+    margin: 3em 1em 0em 1em;
+    color:gray;
+    text-decoration: none;
+    font-size: large;
+}
+.menu-nav ul li a:hover{
+    columns: black;
+    color: black;
+    font-weight: bolder;
+    transition: 0.5s;
+} 
+.menu h2{
+    color: rgb(230, 184, 0);
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    margin: none;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border:none;
+    border-bottom: 2px solid #e2a241;
+}
+.menu-grid p{
+    color: #e2a241;
+    font-size: large;
+    margin: none;
+    padding: none;
+    
+}
+
+.menu-grid div{
+    /*border: 2px solid rgb(230, 184, 0);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    grid-gap: 1em;
+    border-radius: 10px;
+    margin: 1em;
+    overflow: hidden;
+    height: 55vh;
+    
+}
+.menu-grid img{
+    width: 100%;
+    height: 60%;
+    border: none;
+    border-radius: 2px;
+}
+.menu-grid p{
+    width: 100%;
+}
+.menu-dish button{
+    background-color: #e2a241;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    margin-bottom: 0.5em;
+    padding: 0.75em 1.25em;
+    font-size: large;
+    cursor: pointer;
+    width: auto;
+}
+.menu-dish{
+    margin: 0% 10%;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #e2a241;
+    padding: 20px;
+    position: relative;
+    
+}
+.i-bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-bottom: 2em;
+}
+.footer a{
+    border: none;
+    text-decoration: none;
+    margin: 0em 1em;
+    color:white;
+    font-size: xx-large;
+
+}
+.credit{
+    font-size: 15px;
+    font-stretch: 2px;
+    text-align: center;
+    color: rgb(77, 75, 75);
+}
+.fa-bars{
+    color: #e2a241;
+}
+#topbtn{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    border: none;
+    border-radius: 50px;
+    background-color: #e2a241;
+    color: white;
+    font-size: large;
+    padding: 1.5em;
+    font-weight: bold;
+    z-index: 99;
+    cursor: pointer;
+  }
+@media(max-width:1140px){
+    .menu-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-dish button{
+        padding: 0.5em 1em ;
+    }
+    .menu-dish{
+        margin:0% 19%;
+    }
+}
+@media(max-width:890px){
+    .menu-grid{
+        display: grid;
+    }
+    .nav-bar ul li{
+        margin: 0em 1em;
+    }    
+    .menu-nav ul li a{
+        font-size: medium;
+        text-align: center;
+    }
+}
+@media(max-width:740px){
+    .menu-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-bar ul li{
+        margin: 0em 0.5em;
+    } 
+    .menu-dish{
+        margin:0% 20%;
+    }
+    .menu-nav ul li a{
+        font-size: medium;
+        text-align: center;
+    }
+}
+@media(max-width:650px){
+    .nav-bar ul li{
+        margin:0em 0.25em;
+    }
+    .nav-bar ul li a{
+        font-size: 15x;
+    }
+}

@@ -1,0 +1,162 @@
+html, body{
+    height: 100%;
+    font-family: 'Roboto';
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.header{
+
+    background-color: #e2a241;
+    margin: none;
+    overflow: hidden;
+    height: 100px;
+    position: relative;
+}
+.nav-bar{
+    float: right;
+  
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+#logo{
+    float: left;
+    height: 100px;
+    width: 20%;
+    padding-left: 2em;
+}
+#logo img{
+    height: 90px;
+	width: auto;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    margin: 0em 2em;
+}
+.nav-bar ul li a{
+    padding: 2em 0em 1em 0em;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    height:1.2em;
+}
+.nav-bar ul li a:hover{
+    border-bottom: 2px solid white;
+}
+.main{
+  text-align: center;
+}
+.login{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+  margin-top: 10vh;
+  padding: none;
+  background-color:#e2a241;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.login-nav{
+  padding: none;
+}
+.login-nav ul{
+  list-style: none;
+  display: inline-flex;
+  text-align: center;
+  width: 100%;
+
+}
+.login-nav ul li{
+
+  margin: 0em 2em;
+  padding: 0.5em 1em;
+  color: white;
+  text-align: center;
+  font-size: large;
+
+}
+.login-nav ul li:hover{
+  color: black;
+  transition: 0.5s;
+  border-bottom: 2px solid black;
+}
+.details{
+  padding: 2em 0em;
+}
+.details a{
+  text-decoration: none;
+  color:white;
+  margin-top: 1em;
+}
+.details button{
+  background-color:white;
+  color:  #e2a241;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  font-size: large;
+  cursor: pointer;
+}
+.details label, input{
+  margin: 1em 0.25em;
+  color: white;
+  border-radius: 3px;
+}
+.footer{
+  width: 100%;
+  height: 100px;
+  background-color: #e2a241;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: none;
+
+  
+}
+.i-bar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-bottom: 2em;
+}
+.footer a{
+  border: none;
+  text-decoration: none;
+  margin: 0em 1em;
+  color:white;
+  font-size: xx-large;
+
+}
+.credit{
+  font-size: 15px;
+  font-stretch: 2px;
+  text-align: center;
+  color: rgb(77, 75, 75);
+}
+@media(max-width:920px){
+  .nav-bar ul li{
+    margin: 0em 1em;
+  }
+}
+@media(max-width:740px){
+  .nav-bar ul li{
+    margin: 0em 0.5em;
+  }
+}
