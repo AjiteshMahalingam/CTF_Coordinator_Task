@@ -58,18 +58,17 @@ body{
     border-bottom: 2px solid white;
 }
 .main{
+  z-index: 0;
   text-align: center;
 }
 .login{
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 40vw;
-  margin-top: 10vh;
-  padding: none;
-  background-color:#e2a241;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  width: 25vw;
+  margin-top: 5vh;
+  border-radius: 10px;
+  background-color:#dfdfdf;
+  padding: 10px 35px;
 }
 .login-nav{
   padding: none;
@@ -100,23 +99,28 @@ body{
 }
 .details a{
   text-decoration: none;
-  color:white;
+  color:black;
   margin-top: 1em;
 }
 .details button{
-  background-color:white;
-  color:  #e2a241;
+  background-color:#e2a241;
+  color:  white;
   border: none;
   border-radius: 5px;
-  padding: 0.5em 1em;
+  padding: 0.5em 1.5em;
   margin: 0.5em;
   font-size: large;
   cursor: pointer;
 }
-.details label, input{
-  margin: 1em 0.25em;
-  color: white;
-  border-radius: 4px;
+.details p{
+  text-align: left;
+}
+input{
+  width: 89%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 #title{
   font-size: x-large;
